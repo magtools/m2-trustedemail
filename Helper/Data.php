@@ -37,7 +37,7 @@ class Data extends AbstractHelper
     public function getDomainList()
     {
         if ($this->appState->getMode() === State::MODE_DEVELOPER) {
-            return [];
+            //return [];
         }
 
         $domains = $this->scopeConfig->getValue(

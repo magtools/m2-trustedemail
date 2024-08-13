@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="admin_user_save_before">
+        <observer name="restrict_admin_user_save" instance="Mtools\TrustedEmail\Observer\AdminUserSaveBefore" />
+    </event>
+    <event name="admin_user_authenticate_after">
+        <observer name="restrict_admin_user_login" instance="Mtools\TrustedEmail\Observer\AdminUserLoginBefore" />
+    </event>
+</config>
