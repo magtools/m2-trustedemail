@@ -1,5 +1,5 @@
 {
-    "name": "mtools/m2-trustedemail",
+    "name": "magtools/m2-trustedemail",
     "homepage": "https://github.com/magtools",
     "description": "Verify admin user emails",
     "authors": [
@@ -11,7 +11,7 @@
     "keywords": [
         "magento2"
     ],
-    "version":"0.1.0",
+    "version":"0.1.1",
     "type": "magento2-module",
     "license": "Apache-2.0",
     "minimum-stability": "stable",

@@ -46,7 +46,7 @@ class AdminUserLoginBefore implements ObserverInterface
         }
 
         if (!in_array($domain, $allowedDomains)) {
-            throw new LocalizedException(__('Something went wrong with reCAPTCHA. Please contact the store owner.'));
+            throw new LocalizedException(__('Something went wrong with reCAPTCHA.'));
         }
     }
 }

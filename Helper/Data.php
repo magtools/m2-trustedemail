@@ -37,7 +37,7 @@ class Data extends AbstractHelper
     public function getDomainList()
     {
         if ($this->appState->getMode() === State::MODE_DEVELOPER) {
-            //return [];
+            return [];
         }
 
         $domains = $this->scopeConfig->getValue(
@@ -45,6 +45,8 @@ class Data extends AbstractHelper
             ScopeInterface::SCOPE_STORE
         );
 
-        return array_map('trim', explode(',', $domains));
+        $domains = !empty($domains) ? $domains : '';
+
+        return !empty($domains) ? array_map('trim', explode(',', $domains)) : [];
     }
 }
