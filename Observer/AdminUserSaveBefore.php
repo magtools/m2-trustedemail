@@ -43,7 +43,7 @@ class AdminUserSaveBefore implements ObserverInterface
     {
         $postData = $this->request->getPostValue();
 
-        $email = isset($postData['email']) ? $postData['email'] : null;
+        $email = isset($postData['email']) ? $postData['email'] : '';
 
         if ($email) {
             $domain = substr(strrchr($email, "@"), 1);

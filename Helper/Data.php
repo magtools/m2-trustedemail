@@ -8,7 +8,7 @@ use Magento\Framework\App\State;
 
 class Data extends AbstractHelper
 {
-    const XML_PATH_DOMAIN_LIST = 'mtools/trusted_email/domain_list';
+    protected const XML_PATH_DOMAIN_LIST = 'mtools/trusted_email/domain_list';
 
     /**
      * @var State

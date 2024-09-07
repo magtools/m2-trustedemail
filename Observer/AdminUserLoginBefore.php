@@ -37,7 +37,7 @@ class AdminUserLoginBefore implements ObserverInterface
             return;
         }
 
-        $email = $user->getEmail();
+        $email = !empty($user->getEmail()) ? $user->getEmail() : '';
         $domain = substr(strrchr($email, "@"), 1);
         $allowedDomains = $this->trustedEmailHelper->getDomainList();
 
